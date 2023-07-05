@@ -1,7 +1,7 @@
 const inputEl = document.querySelector("input");
 
 const getJsonData = async () => {
-  const response = await fetch("/assets/json/data.json");
+  const response = await fetch("RTO-Number-Finder/assets/json/data.json");
   return await response.json();
 };
 
@@ -35,6 +35,7 @@ const searchRecord = async (value) => {
 //     }
 //   }
 // });
+
 
   function search(){
   if (inputEl.value.length > 3) {
