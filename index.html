@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .logo {
+        font-family: "Great Vibes", cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="bg-yellow-50 w-full ">
+      <div class="w-screen h-60 sm:h-72 bg-blue-500 border-b-2 border-blue-800">
+        <div class="flex justify-between items-center py-4 px-8">
+          <h1 class="logo text-2xl  text-white transition hover:text-yellow-400 sm:text-3xl">Sakthi</h1>
+          <div class="flex space-x-4  list-none font-bold  sm:pr-5 sm:space-x-9">
+            <li class="hover:text-white text-xs sm:text-sm" onclick="alert(`created by sakthi`)">About</li>
+            <li class="text-white text-xs sm:text-sm hover:text-black"><a href="">Github</a></li>
+          </div>
+        </div>
+
+        <div class="w-screen flex flex-col items-center space-y-7">
+          <h1 class="font-bold text-xl sm:text-2xl">RTO Finder</h1>
+          <div class="flex flex-col items-center relative">
+            <div class="absolute left-2 top-2 text-gray-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275t-.7-.275ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"
+                />
+              </svg>
+            </div>
+            <input
+              class="pl-10 pr-4 py-2 rounded-md text-sm bg-white outline-none uppercase tracking-widest placeholder:normal-case placeholder:tracking-normal"
+              type="search"
+              placeholder="Enter Vehicle number"
+            />
+             <button onclick="search()" class=" bg-blue-700 px-7 py-0.5 text-sm rounded-md m-4 shadow-white shadow-sm text-white sm:text-base">
+              Search</button>
+          </div>
+        </div>
+      </div>
+
+      
+        <div class="p-5 w-11/12 bg-blue-700 text-white h-full bg-blue-00 mx-auto my-7 rounded-md shadow-2xl shadow-black space-y-6 hidden" id="resultSsextion">
+              <h3 class="text-sm">Your qurey : <span class="font-bold tracking-widest" id="qurey">TN12</span></h3>
+
+              <table class="w-full text-xs  sm:text-base">
+                <tbody class="rounded-md" >
+
+                  
+                    <tr>
+                        <td class="border p-2 border-gray-400">Code</td>
+                        <td class="border p-2 border-gray-400" id="code">TN10</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 border-gray-400">Location</td>
+                        <td class="border p-2 border-gray-400" id="location">Chennimalai</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 border-gray-400">Type</td>
+                        <td class="border p-2 border-gray-400" id="rto">RTO</td>
+                    </tr>
+                    <tr>
+                        <td class="border p-2 border-gray-400">District</td>
+                        <td class="border p-2 border-gray-400" id="district">Erode</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </main>
+     <!-- <script src="../assets/js/download.js" ></script> -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
